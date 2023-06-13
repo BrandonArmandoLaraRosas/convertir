@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+    <script src="./js/pesos.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Convertir Pesos a Dolares</h1>
+    <fieldset>
+    <form>
+        <label for="tipo-cambio">Tipo de cambio:</label>
+        <input type="number" id="tipo-cambio" step="0.01"  placeholder="Ingrese el tipo de cambio" required>
+
+        <h2>Pesos a Dolares</h2>
+        <label for="cantidad-pesos">Cantidad en Pesos:</label>
+        <input type="number" id="cantidad-pesos" step="0.01" placeholder="Pesos Mexicano" required>
+        <p>
+            <button type="button" onclick="convertirPesosADolares()">Covertir</button>
+        </p>
+        <h2>Dolares a pesos</h2>
+        <label for="cantidad-dolares">Cantidad en Dolares:</label>
+        <input type="number" id="cantidad-dolares" step="0.01" placeholder="Dolares" required>
+        <p>
+            <button type="button" onclick="convertirDolaresAPesos()">Convertir</button>
+        </p>
+        <p>
+            <button type="button" onclick="limpiarCampos()">Limpiar</button>
+        </p>
+        
+    </form>
+</fieldset>
+</body>
+</html>
